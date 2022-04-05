@@ -1,0 +1,8 @@
+{{!-- {{yield}} --}}
+<h2>{{@title}}</h2>
+
+<ul>
+  {{#each @people as |person|}}
+    <button type="button" {{on 'click' (fn this.showPerson person)}}>{{person}}</button>
+  {{/each}}
+</ul>
